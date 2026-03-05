@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Frizeria Stefan - Acasa</title>
+
+  <!-- CSS extern -->
+  <link rel="stylesheet" href="css/pagina1.css">
+
+  <!-- CSS intern (Sarcina 4 Lab4) -->
+  <style>
+    /* Selector universal */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Selector de element - titluri h1 */
+    h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    /* Selector de element - titluri h2 */
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    /* Selector de element - paragrafe */
+    p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Selector de element - tabel */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Stil inline pe titlu (Sarcina 3 Lab4) -->
+    <h1 style="text-align: center; color: white;">Frizeria Stefan</h1>
+  </header>
+
+  <nav>
+    <a href="pagina1.html">Acasa</a> |
+    <a href="pagina2.html">Servicii</a> |
+    <a href="pagina3.html">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Sectiune de prezentare (Sarcina 1 Lab4) -->
+    <section>
+      <h2>Despre noi</h2>
+      <!-- Stil inline pe paragraf (Sarcina 3 Lab4) -->
+      <p style="font-size: 18px; font-weight: bold;">Bun venit la Frizeria Stefan! Oferim servicii de frizerie pentru
+        barbati din anul 2010.</p>
+      <p>Echipa noastra este formata din frizeri cu experienta si pasiune pentru meserie. La noi veti gasi un spatiu
+        curat, prietenos si relaxant.</p>
+      <p>Folosim numai produse de calitate pentru a va asigura cel mai bun rezultat.</p>
+    </section>
+
+    <!-- Sectiune informativa cu servicii (Sarcina 1 Lab4) -->
+    <section>
+      <h2>Serviciile noastre principale</h2>
+      <ul>
+        <li>Tuns par barbati</li>
+        <li>Tuns barba</li>
+        <li>Ras clasic cu brici</li>
+        <li>Spalat si uscat par</li>
+      </ul>
+    </section>
+
+    <!-- Tabel cu preturi (Sarcina 4 Lab3) -->
+    <section>
+      <h2>Lista de preturi</h2>
+      <table id="tabel-preturi">
+        <tr>
+          <th>Serviciu</th>
+          <th>Durata</th>
+          <th>Pret</th>
+        </tr>
+        <tr>
+          <td>Tuns par barbati</td>
+          <td>30 min</td>
+          <td>100 lei</td>
+        </tr>
+        <tr>
+          <td>Tuns barba</td>
+          <td>20 min</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Ras clasic cu brici</td>
+          <td>25 min</td>
+          <td>80 lei</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Program de lucru -->
+    <section>
+      <h2>Program de lucru</h2>
+      <p>Luni - Vineri: 09:00 - 19:00</p>
+      <p>Sambata: 10:00 - 17:00</p>
+      <p>Duminica: Inchis</p>
+    </section>
+
+    <!-- Buton cu stil inline si clasa (Sarcina 3 + Sarcina 6 Lab4) -->
+    <section>
+      <a href="pagina3.html" class="buton"
+        style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none;">Contacteaza-ne</a>
+      <a href="pagina2.html" class="buton"
+        style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none;">Vezi
+        serviciile</a>
+    </section>
+  </main>
+
+  <!-- Footer completat (Sarcina 1 Lab4) -->
+  <footer>
+    <p>Autor: Stefan</p>
+    <p>Anul realizarii: 2026</p>
+    <p>Contact: contact@frizerastefan.ro | Tel: 0740 123 456</p>
+    <p>Frizeria Stefan &copy; 2026 | Toate drepturile rezervate</p>
+  </footer>
+
+</body>
+
+</html>
