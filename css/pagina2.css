@@ -1,63 +1,205 @@
-/* CSS extern pentru pagina2.html - Servicii */
+/* CSS pentru Laboratorul nr. 5 - Aplicat uniform pe toate paginile (Sarcina 6) */
 
-/* Stilizare body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: white;
-    color: black;
+/* Sarcina 1 & 2: Stilizarea textului, body și personalizarea fontului */
+* {
+    box-sizing: border-box;
 }
 
-/* Stilizare header */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
 header {
-    background-color: #222;
-    color: white;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em !important;
+    text-align: center !important;
+    color: #ffffff !important;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px !important;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2980b9 !important;
+    text-align: left;
+    border-bottom: 2px solid #2980b9 !important;
+    padding-bottom: 5px !important;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555555 !important;
+    text-align: justify;
+}
+
+.highlight {
+    background-color: #f1c40f;
+    color: #2c3e50 !important;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Sarcina 3: Stilizarea listelor */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 40px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+ul {
+    list-style-type: square; 
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+li:hover {
+    color: #e74c3c;
+}
+
+/* Sarcina 4: Stilizarea tabelelor */
+table, #tabel-preturi {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.1em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px 15px !important;
+    border: 1px solid #ddd !important;
+    text-align: center !important;
+}
+
+th {
+    background-color: #2980b9 !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:hover {
+    background-color: #e9f7ef; 
+}
+
+/* Sarcina 5: Stilizarea linkurilor */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Navigare (cerințe generale + linkuri) */
+nav {
+    background-color: #34495e;
     padding: 15px;
     text-align: center;
 }
 
-/* Stilizare nav */
-nav {
-    background-color: gray;
-    padding: 10px;
-    text-align: center;
-}
-
 nav a {
-    color: white;
+    color: #ecf0f1;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-/* Stilizare footer */
+nav a:hover {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+/* Butoane */
+.buton {
+    background-color: #27ae60 !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-decoration: none !important;
+}
+
+.buton:hover {
+    background-color: #2ecc71 !important;
+}
+
+/* Footer */
 footer {
-    margin-top: 30px;
-    border-top: 2px solid gray;
-    padding-top: 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
-    color: #555;
+    padding: 15px;
+    margin-top: 30px;
     font-size: 0.9em;
 }
 
-/* Stilizare formular */
-form {
-    margin: 10px 0;
-}
-
-input,
-select {
-    padding: 8px;
+footer p {
+    color: #bdc3c7 !important;
+    text-align: center;
     margin: 5px 0;
-    font-size: 14px;
 }
 
-/* Selector class - buton */
-.buton {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+/* Formulari - Pentru pagina 2 */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
 }
